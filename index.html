@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Las Vegas Solar - Unlock financial independence and sustainable living with personalized solar solutions. Expert system design, flexible financing, and comprehensive warranty coverage.">
+    <meta name="keywords" content="solar energy, Las Vegas solar, renewable energy, solar panels, sustainable living">
+    <meta name="author" content="Las Vegas Solar">
+    <meta property="og:title" content="Las Vegas Solar: Your Energy Freedom Starts Here">
+    <meta property="og:description" content="Transform your home with premium solar solutions. Personalized system design, flexible financing, and guaranteed performance.">
+    <meta property="og:type" content="website">
+    <title>Las Vegas Solar: Your Energy Freedom Starts Here</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+        }
+        
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(139, 92, 246, 0.2);
+        }
+        
+        .btn-primary {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 35px rgba(139, 92, 246, 0.3);
+        }
+        
+        .btn-secondary {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 35px rgba(59, 130, 246, 0.3);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(139, 92, 246, 0.15);
+        }
+        
+        .faq-item {
+            transition: all 0.3s ease;
+        }
+        
+        .faq-question {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-question:hover {
+            color: #a78bfa;
+        }
+        
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-answer {
+            transition: all 0.3s ease;
+            max-height: 0;
+            overflow: hidden;
+        }
+        
+        .faq-answer:not(.hidden) {
+            max-height: 500px;
+        }
+        
+        .mobile-menu {
+            transition: all 0.3s ease;
+        }
+        
+        .cta-overlay {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%);
+        }
+        
+        .star-rating {
+            color: #fbbf24;
+        }
+        
+        .benefit-item {
+            transition: all 0.3s ease;
+        }
+        
+        .benefit-item:hover {
+            transform: translateX(8px);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-md border-b border-gray-800">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-sun text-white text-lg"></i>
+                </div>
+                <span class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">Las Vegas Solar</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#features" class="text-gray-300 hover:text-purple-400 transition-colors duration-300 font-medium">Features</a>
+                <a href="#benefits" class="text-gray-300 hover:text-purple-400 transition-colors duration-300 font-medium">Benefits</a>
+                <a href="#testimonials" class="text-gray-300 hover:text-purple-400 transition-colors duration-300 font-medium">Testimonials</a>
+                <a href="#faq" class="text-gray-300 hover:text-purple-400 transition-colors duration-300 font-medium">FAQ</a>
+                <a href="https://americashomecontractors.com/actnow" class="px-6 py-2 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg font-semibold btn-primary hover:shadow-lg">Get Started</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-button md:hidden p-2 text-gray-300 hover:text-purple-400 transition-colors duration-300">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden absolute top-full left-0 right-0 bg-gray-800 border-t border-gray-700 md:hidden">
+                <div class="flex flex-col space-y-4 px-4 py-6">
+                    <a href="#features" class="text-gray-300 hover:text-purple-400 transition-colors duration-300 font-medium">Features</a>
+                    <a href="#benefits" class="text-gray-300 hover:text-purple-400 transition-colors duration-300 font-medium">Benefits</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-purple-400 transition-colors duration-300 font-medium">Testimonials</a>
+                    <a href="#faq" class="text-gray-300 hover:text-purple-400 transition-colors duration-300 font-medium">FAQ</a>
+                    <a href="https://americashomecontractors.com/actnow" class="px-6 py-2 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg font-semibold text-center btn-primary hover:shadow-lg">Get Started</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8 hero-gradient overflow-hidden">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight tracking-tight">
+                <span class="bg-gradient-to-r from-purple-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">Las Vegas Solar</span>
+                <span class="block text-white mt-3">Your Energy Freedom Starts Here</span>
+            </h1>
+            
+            <p class="text-lg sm:text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
+                Unlock financial independence and sustainable living with customized solar solutions designed specifically for Las Vegas homes. Transform your energy costs into energy savings while contributing to a greener future.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                <a href="https://americashomecontractors.com/actnow" class="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg font-bold text-lg btn-primary hover:shadow-2xl w-full sm:w-auto">
+                    Start Your Solar Journey
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <a href="#features" class="px-8 py-4 border-2 border-purple-500 text-purple-400 rounded-lg font-bold text-lg btn-secondary hover:bg-purple-500 hover:bg-opacity-10 w-full sm:w-auto">
+                    Learn More
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-16">
+                <div class="bg-gray-800 bg-opacity-50 backdrop-blur-md rounded-lg p-6 border border-gray-700 hover:border-purple-500 transition-colors duration-300">
+                    <div class="text-3xl font-bold text-purple-400 mb-2">25+</div>
+                    <p class="text-gray-400">Years of Combined Expertise</p>
+                </div>
+                <div class="bg-gray-800 bg-opacity-50 backdrop-blur-md rounded-lg p-6 border border-gray-700 hover:border-purple-500 transition-colors duration-300">
+                    <div class="text-3xl font-bold text-blue-400 mb-2">5000+</div>
+                    <p class="text-gray-400">Satisfied Customers</p>
+                </div>
+                <div class="bg-gray-800 bg-opacity-50 backdrop-blur-md rounded-lg p-6 border border-gray-700 hover:border-purple-500 transition-colors duration-300">
+                    <div class="text-3xl font-bold text-purple-400 mb-2">$500M+</div>
+                    <p class="text-gray-400">Savings Generated</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 px-4 sm:px-6 lg:px-8 bg-gray-800 bg-opacity-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-4 text-white">Why Choose Las Vegas Solar?</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    We deliver comprehensive solar solutions tailored to maximize your energy independence and financial returns
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1: Personalized System Design -->
+                <div class="feature-card bg-gray-900 rounded-xl p-8 border border-gray-700 hover:border-purple-500">
+                    <div class="w-14 h-14 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-pencil-ruler text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Personalized System Design</h3>
+                    <p class="text-gray-400 mb-4 leading-relaxed">
+                        Our expert engineers conduct comprehensive energy audits of your home to design a solar system perfectly matched to your unique consumption patterns. We analyze your roof orientation, shading patterns, and historical energy usage to create a customized solution that maximizes your return on investment.
+                    </p>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-purple-400 mr-3 mt-1"></i>
+                            <span>Advanced 3D modeling and visualization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-purple-400 mr-3 mt-1"></i>
+                            <span>Optimized for Las Vegas climate conditions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-purple-400 mr-3 mt-1"></i>
+                            <span>Seamless integration with existing electrical</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2: Flexible Financing Options -->
+                <div class="feature-card bg-gray-900 rounded-xl p-8 border border-gray-700 hover:border-purple-500">
+                    <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-credit-card text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Flexible Financing Options</h3>
+                    <p class="text-gray-400 mb-4 leading-relaxed">
+                        We understand that going solar is a significant investment. That's why we offer multiple financing pathways designed to fit any budget. Whether you prefer solar loans, leases, power purchase agreements, or cash purchases, we have solutions to make solar accessible.
+                    </p>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-400 mr-3 mt-1"></i>
+                            <span>Zero-down financing options available</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-400 mr-3 mt-1"></i>
+                            <span>Competitive interest rates and terms</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-400 mr-3 mt-1"></i>
+                            <span>Federal tax credits and rebates applied</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3: Comprehensive Warranty Coverage -->
+                <div class="feature-card bg-gray-900 rounded-xl p-8 border border-gray-700 hover:border-purple-500">
+                    <div class="w-14 h-14 bg-gradient-to-br from-purple-500 to-indigo-500 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Comprehensive Warranty Coverage</h3>
+                    <p class="text-gray-400 mb-4 leading-relaxed">
+                        Your investment is protected with industry-leading warranty coverage on all equipment and installation. We back our work with extensive warranties that provide peace of mind for decades of reliable solar energy production.
+                    </p>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-indigo-400 mr-3 mt-1"></i>
+                            <span>25-year panel performance guarantee</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-indigo-400 mr-3 mt-1"></i>
+                            <span>10-year inverter and equipment warranty</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-indigo-400 mr-3 mt-1"></i>
+                            <span>Lifetime workmanship warranty</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-24 px-4 sm:px-6 lg:px-8 bg-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-4 text-white">Transform Your Energy Future</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Discover the tangible benefits of switching to solar energy for your Las Vegas home
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Benefit 1: Guaranteed Performance -->
+                <div class="benefit-item bg-gray-800 rounded-xl p-8 border border-gray-700 hover:border-purple-500 transition-colors duration-300">
+                    <div class="flex items-start mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-chart-line text-white text-xl"></i>
+                        </div>
+                        <div class="ml-6">
+                            <h3 class="text-2xl font-bold text-white mb-3">Guaranteed Performance</h3>
+                            <p class="text-gray-400 leading-relaxed mb-4">
+                                Your solar system is engineered and installed to perform at peak efficiency. We utilize premium components and rigorous quality control to ensure your system generates maximum energy output throughout its lifespan. Our monitoring systems track real-time performance, and we're committed to maintaining optimal output.
+                            </p>
+                            <div class="bg-gray-900 rounded-lg p-4 border border-gray-700">
+                                <p class="text-purple-300 font-semibold">Expected Performance: 98%+ system efficiency with 25+ year lifespan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefit 2: Protection Against Rising Rates -->
+                <div class="benefit-item bg-gray-800 rounded-xl p-8 border border-gray-700 hover:border-purple-500 transition-colors duration-300">
+                    <div class="flex items-start mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-lock text-white text-xl"></i>
+                        </div>
+                        <div class="ml-6">
+                            <h3 class="text-2xl font-bold text-white mb-3">Protection Against Rising Rates</h3>
+                            <p class="text-gray-400 leading-relaxed mb-4">
+                                Electricity rates continue to climb each year, typically increasing 2-4% annually. By generating your own power, you lock in predictable energy costs and protect yourself from future rate hikes. Your solar investment becomes more valuable as utility rates increase over time.
+                            </p>
+                            <div class="bg-gray-900 rounded-lg p-4 border border-gray-700">
+                                <p class="text-blue-300 font-semibold">Average Savings: $30,000+ over 25 years compared to rising utility costs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Benefit 3: Contribute to a Greener Future -->
+                <div class="benefit-item bg-gray-800 rounded-xl p-8 border border-gray-700 hover:border-purple-500 transition-colors duration-300">
+                    <div class="flex items-start mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-leaf text-white text-xl"></i>
+                        </div>
+                        <div class="ml-6">
+                            <h3 class="text-2xl font-bold text-white mb-3">Contribute to a Greener Future</h3>
+                            <p class="text-gray-400 leading-relaxed mb-4">
+                                Every kilowatt of solar energy generated eliminates the need for fossil fuel-based electricity. By choosing solar, you're making a meaningful environmental impact, reducing carbon emissions, and supporting sustainable energy practices. Your home becomes a clean energy producer.
+                            </p>
+                            <div class="bg-gray-900 rounded-lg p-4 border border-gray-700">
+                                <p class="text-green-300 font-semibold">Environmental Impact: Equivalent to planting 100+ trees annually</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Benefit: Increased Home Value -->
+                <div class="benefit-item bg-gray-800 rounded-xl p-8 border border-gray-700 hover:border-purple-500 transition-colors duration-300">
+                    <div class="flex items-start mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-home text-white text-xl"></i>
+                        </div>
+                        <div class="ml-6">
+                            <h3 class="text-2xl font-bold text-white mb-3">Increased Home Value</h3>
+                            <p class="text-gray-400 leading-relaxed mb-4">
+                                Homes with solar systems sell faster and command higher prices. Studies show that solar installations increase property values by approximately 4% on average. Your investment not only saves on energy costs but also enhances your home's market appeal and resale value.
+                            </p>
+                            <div class="bg-gray-900 rounded-lg p-4 border border-gray-700">
+                                <p class="text-yellow-300 font-semibold">Home Value Increase: Average $15,000+ in property appreciation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="py-24 px-4 sm:px-6 lg:px-8 bg-gray-800 bg-opacity-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-4 text-white">About Las Vegas Solar</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto"></div>
+            </div>
+
+            <div class="space-y-6">
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    Las Vegas Solar was founded on the belief that clean, renewable energy should be accessible to every homeowner. With over 25 years of combined experience in the solar industry, our team of certified engineers, electricians, and installation specialists has helped thousands of Las Vegas residents transition to sustainable energy. We started with a simple mission: to make solar installation straightforward, affordable, and transformative. Today, we're proud to be one of the region's most trusted solar providers, known for our technical expertise, customer service excellence, and commitment to delivering exceptional results on every project.
+                </p>
+                
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    Our core values drive everything we do. We believe in transparency—no hidden fees, no misleading promises, just honest guidance tailored to your needs. We're committed to quality, using only premium equipment and employing certified professionals to ensure your system exceeds expectations. Environmental responsibility is at our heart; we're passionate about accelerating the adoption of clean energy and reducing carbon emissions in our community. Most importantly, we prioritize customer satisfaction, offering comprehensive support from initial consultation through decades of system operation. When you choose Las Vegas Solar, you're choosing a partner dedicated to your energy independence and long-term success.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="bg-gray-900 rounded-lg p-6 border border-gray-700 text-center">
+                    <div class="text-4xl font-bold text-purple-400 mb-2">25+</div>
+                    <p class="text-gray-400">Years of Industry Experience</p>
+                </div>
+                <div class="bg-gray-900 rounded-lg p-6 border border-gray-700 text-center">
+                    <div class="text-4xl font-bold text-blue-400 mb-2">5000+</div>
+                    <p class="text-gray-400">Happy Customers Served</p>
+                </div>
+                <div class="bg-gray-900 rounded-lg p-6 border border-gray-700 text-center">
+                    <div class="text-4xl font-bold text-purple-400 mb-2">A+</div>
+                    <p class="text-gray-400">BBB Rating & Certified</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 px-4 sm:px-6 lg:px-8 bg-gray-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-4 text-white">What Our Customers Say</h2>
+                <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                    Real stories from real Las Vegas homeowners who've transformed their energy future
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-gray-800 rounded-xl p-6 border border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold">JM</span>
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-bold text-white">James Mitchell</p>
+                            <p class="text-sm text-gray-400">Las Vegas, NV</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <span class="star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        "The team at Las Vegas Solar made the entire process effortless. From the initial consultation to installation, everything was professional and transparent. My electric bill has dropped by 85%, and I love knowing I'm generating my own clean energy. Highly recommended!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-gray-800 rounded-xl p-6 border border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold">SR</span>
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-bold text-white">Sarah Rodriguez</p>
+                            <p class="text-sm text-gray-400">Henderson, NV</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <span class="star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        "I was skeptical about solar, but the team answered every question and provided detailed projections. The personalized system design they created is perfect for my home. Two years in and I've already recovered my investment. The monitoring system is fantastic too!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-gray-800 rounded-xl p-6 border border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold">MK</span>
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-bold text-white">Michael & Karen Wong</p>
+                            <p class="text-sm text-gray-400">North Las Vegas, NV</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <span class="star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        "Outstanding service from start to finish. The financing options made it accessible, and the installation was completed ahead of schedule. Our home is now energy independent, and we're saving over $300 per month. Worth every penny!"
+                    </p>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card bg-gray-800 rounded-xl p-6 border border-gray-700">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold">DB</span>
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-bold text-white">David Brown</p>
+                            <p class="text-sm text-gray-400">Boulder City, NV</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <span class="star-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        "I was impressed by their expertise and attention to detail. They explained everything clearly and didn't pressure me. The system has been running flawlessly for three years now. Their customer support is exceptional—they truly care about your satisfaction!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 px-4 sm:px-6 lg:px-8 bg-gray-800 bg-opacity-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-4 text-white">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-400">
+                    Find answers to common questions about solar energy and our services
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item bg-gray-900 rounded-lg border border-gray-700 overflow-hidden">
+                    <button class="faq-question w-full px-6 py-4 flex items-center justify-between hover:bg-gray-800 transition-colors duration-300">
+                        <h3 class="text-lg font-semibold text-white text-left">How much can I save with a solar system?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-purple-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 py-4 border-t border-gray-700 bg-gray-800 bg-opacity-50">
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            The amount you save depends on several factors including your current electricity usage, system size, roof orientation, and local electricity rates. On average, Las Vegas homeowners save $15,000 to $35,000 over the 25-year lifespan of their system. Many customers see their investment recouped within 6-8 years, after which they enjoy free electricity for decades. Our team provides detailed energy audits and customized projections showing your specific savings potential.
+                        </p>
+                        <div class="bg-gray-900 rounded p-4 border border-gray-700">
+                            <p class="text-purple-300 font-semibold text-sm">Average Las Vegas savings: $30,000+ over 25 years</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item bg-gray-900 rounded-lg border border-gray-700 overflow-hidden">
+                    <button class="faq-question w-full px-6 py-4 flex items-center justify-between hover:bg-gray-800 transition-colors duration-300">
+                        <h3 class="text-lg font-semibold text-white text-left">What happens to my solar system during cloudy days or at night?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-purple-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 py-4 border-t border-gray-700 bg-gray-800 bg-opacity-50">
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Solar panels generate electricity even on cloudy days, though at reduced efficiency compared to sunny conditions. During nighttime, your system draws electricity from the grid as normal. If you want energy independence 24/7, we offer battery storage solutions that store excess daytime energy for nighttime use. Additionally, Las Vegas receives an average of 310 sunny days per year, making it ideal for solar production. Our systems are designed to maximize performance throughout all seasons and weather conditions.
+                        </p>
+                        <div class="bg-gray-900 rounded p-4 border border-gray-700">
+                            <p class="text-blue-300 font-semibold text-sm">Las Vegas solar potential: 5.5+ peak sun hours daily average</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item bg-gray-900 rounded-lg border border-gray-700 overflow-hidden">
+                    <button class="faq-question w-full px-6 py-4 flex items-center justify-between hover:bg-gray-800 transition-colors duration-300">
+                        <h3 class="text-lg font-semibold text-white text-left">What financing options do you offer?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-purple-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 py-4 border-t border-gray-700 bg-gray-800 bg-opacity-50">
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            We understand that financing is crucial to making solar accessible. We offer multiple options to fit your needs: Solar Loans (own the system, get tax credits), Solar Leases (low upfront costs, predictable payments), Power Purchase Agreements (pay only for energy produced), Cash Purchases (maximize savings), and specialty programs for military members and seniors. Many of our customers qualify for zero-down financing options. We also help you take advantage of the federal 30% Investment Tax Credit and Nevada state incentives to maximize your financial benefits.
+                        </p>
+                        <div class="bg-gray-900 rounded p-4 border border-gray-700">
+                            <p class="text-green-300 font-semibold text-sm">Federal tax credit: 30% of installation costs | Multiple financing options available</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item bg-gray-900 rounded-lg border border-gray-700 overflow-hidden">
+                    <button class="faq-question w-full px-6 py-4 flex items-center justify-between hover:bg-gray-800 transition-colors duration-300">
+                        <h3 class="text-lg font-semibold text-white text-left">How long does the installation process take?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-purple-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 py-4 border-t border-gray-700 bg-gray-800 bg-opacity-50">
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            The timeline varies based on system complexity and permitting, but here's what to expect: Initial consultation and design (1-2 weeks), permitting process (2-4 weeks depending on local requirements), equipment procurement (1-2 weeks), and installation (1-3 days for typical residential systems). From start to finish, most customers have their systems operational within 8-12 weeks. We handle all permitting and paperwork, and our experienced installation teams work efficiently to minimize disruption to your home. We'll keep you informed every step of the way.
+                        </p>
+                        <div class="bg-gray-900 rounded p-4 border border-gray-700">
+                            <p class="text-yellow-300 font-semibold text-sm">Average timeline: 8-12 weeks from consultation to activation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item bg-gray-900 rounded-lg border border-gray-700 overflow-hidden">
+                    <button class="faq-question w-full px-6 py-4 flex items-center justify-between hover:bg-gray-800 transition-colors duration-300">
+                        <h3 class="text-lg font-semibold text-white text-left">What maintenance does a solar system require?</h3>
+                        <i class="faq-icon fas fa-chevron-down text-purple-400 transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer hidden px-6 py-4 border-t border-gray-700 bg-gray-800 bg-opacity-50">
+                        <p class="text-gray-300 leading-relaxed mb-4">
+                            Solar systems require minimal maintenance, which is one of their greatest advantages. Most systems need only occasional cleaning (2-4 times per year) to remove dust and debris, especially in the desert environment. We recommend professional cleaning annually to optimize performance. Modern inverters are solid-state with no moving parts, and panels have no mechanical components to wear out. Our monitoring system alerts us to any issues immediately, and we provide proactive maintenance checks. Most customers enjoy decades of trouble-free operation with minimal intervention. We include maintenance support in our service packages.
+                        </p>
+                        <div class="bg-gray-900 rounded p-4 border border-gray-700">
+                            <p class="text-indigo-300 font-semibold text-sm">Maintenance: Minimal | Professional cleaning: 1-2 times annually recommended</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1509391366360-2e938d440220?w=1200&h=600&fit=crop" alt="Solar panels on rooftop" class="w-full h-full object-cover">
+            <div class="cta-overlay absolute inset-0"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                Ready to Take Control of Your Energy?
+            </h2>
+            <p class="text-xl sm:text-2xl text-gray-200 mb-8 leading-relaxed max-w-2xl mx-auto">
+                Join thousands of Las Vegas homeowners who've already made the switch to clean, affordable solar energy. Your energy freedom is just one consultation away.
+            </p>
+            <a href="https://americashomecontractors.com/actnow" class="inline-block px-10 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg font-bold text-lg btn-primary hover:shadow-2xl mb-4">
+                Get Your Free Solar Quote Today
+                <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+            <p class="text-gray-300 text-sm">
+                No obligation • Free consultation • Expert advice
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-sun text-white text-lg"></i>
+                        </div>
+                        <span class="text-xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">Las Vegas Solar</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Transforming Las Vegas homes with premium solar solutions for energy independence and sustainable living.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm">Features</a></li>
+                        <li><a href="#benefits" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm">Benefits</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm">Testimonials</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="text-white font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="blog.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm">Blog</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm">Terms of Service</a></li>
+                        <li><a href="https://americashomecontractors.com/actnow" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm">Get Started</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-white font-bold mb-4">Get In Touch</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="mailto:x_n2deep_x@yahoo.com" class="text-gray-400 hover:text-purple-400 transition-colors duration-300 text-sm flex items-center">
+                                <i class="fas fa-envelope mr-2"></i>
+                                x_n2deep_x@yahoo.com
+                            </a>
+                        </li>
+                        <li class="flex space-x-4 pt-2">
+                            <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">
+                                <i class="fab fa-facebook text-lg"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">
+                                <i class="fab fa-twitter text-lg"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">
+                                <i class="fab fa-instagram text-lg"></i>
+                            </a>
+                            <a href="#" class="text-gray-400 hover:text-purple-400 transition-colors duration-300">
+                                <i class="fab fa-linkedin text-lg"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col sm:flex-row justify-between items-center">
+                    <p class="text-gray-500 text-sm mb-4 sm:mb-0">
+                        &copy; 2025 Las Vegas Solar. All rights reserved.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="privacy.html" class="text-gray-500 hover:text-purple-400 transition-colors duration-300 text-sm">Privacy Policy</a>
+                        <a href="terms.html" class="text-gray-500 hover:text-purple-400 transition-colors duration-300 text-sm">Terms of Service</a>
+                        <a href="blog.html" class="text-gray-500 hover:text-purple-400 transition-colors duration-300 text-sm">Blog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+
+            // FAQ Accordion Toggle
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                if (question) {
+                    question.addEventListener('click', () => {
+                        const answer = item.querySelector('.faq-answer');
+                        const isOpen = !answer.classList.contains('hidden');
+                        
+                        // Close all other FAQ items
+                        faqItems.forEach(otherItem => {
+                            if (otherItem !== item) {
+                                otherItem.querySelector('.faq-answer')?.classList.add('hidden');
+                                otherItem.querySelector('.faq-icon')?.classList.remove('rotate-180');
+                            }
+                        });
+                        
+                        // Toggle current item
+                        answer?.classList.toggle('hidden');
+                        item.querySelector('.faq-icon')?.classList.toggle('rotate-180');
+                    });
+                }
+            });
+
+            // Smooth Scroll for Anchor Links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
